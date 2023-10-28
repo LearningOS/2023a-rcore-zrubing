@@ -17,12 +17,12 @@ const SYSCALL_EXIT: usize = 93;
 /// yield syscall
 const SYSCALL_YIELD: usize = 124;
 /// gettime syscall
-const SYSCALL_GET_TIME: usize = 169;
+pub const SYSCALL_GET_TIME: usize = 169;
 /// taskinfo syscall
 const SYSCALL_TASK_INFO: usize = 410;
 
 mod fs;
-mod process;
+pub mod process;
 
 use fs::*;
 use process::*;
